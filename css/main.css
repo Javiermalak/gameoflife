@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+body
+{
+    margin: 0
+}
+body *
+{
+  transition: all .3s;
+}
+
+section#content
+{
+  user-select: none;
+  width: 100%;
+  height: 100vh;
+}
+
+.container
+{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#canvas
+{
+  background-color: black;
+}
+#title
+{
+  padding: .5em;
+  height: 72px !important;
+  font-family: 'Fascinate Inline';
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 30px;
+}
+
+.actions
+{
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.actions ul
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.actions ul>li
+{
+  display: inline-block;
+  border-radius: 1.5em;
+  overflow: hidden;
+  margin: .5em .25em;
+}
+
+.actions ul>li>a
+{
+  font-size: 1.5em;
+  font-family: 'Saira Extra Condensed';
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+  padding: .25em .5em;
+}
+.actions ul>li:hover
+{
+  transform: translate(-2px,-1px);
+}
+
+.shadowed{
+  box-shadow: 2px 2px 8px 2px black;
+}
